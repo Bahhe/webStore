@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #edf7f6;
+}
+
+.main-container {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+/* SECTION ONE STYLES ------------- */
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('img/section-one-background-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 1000px;
+  color: #edf7f6;
+}
+
+.section-one .section-one-title {
+  font-family: 'Raleway', 'sans-serif';
+  margin: 50px 0;
+  margin-top: 200px;
+  font-size: 50px;
+  text-shadow: 1px 3px 10px rgba(0,0,0,0.3), 
+    -1px 1px 10px rgba(0,0,0,0.3);
+}
+
+.section-one .section-one-subtitle {
+  margin: 50px 0;
+  max-width: 900px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2em;
+  text-shadow: 1px 3px 10px rgba(0,0,0,0.3), 
+    -1px 1px 10px rgba(0,0,0,0.3);
+
+}
+
+.btn-container {
+  margin-top: 200px;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: 'Raleway', 'sans-serif';
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 800; 
+  color: #edf7f6;
+  text-shadow: 1px 3px 10px rgba(0,0,0,0.3), 
+    -1px 1px 10px rgba(0,0,0,0.3);
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #edf7f6;
+  transition: all 0.5s;
+}
+
+.buy-btn {
+  margin: 0 40px;
+  background-color: #07004D;
+  border: none;
+}
+
+.buy-btn:hover {
+  background-color: transparent;
+  border: 1px solid #07004D;
+}
+
+.contact-us-btn {
+  margin: 0 40px;
+}
+
+.contact-us-btn:hover {
+  background-color: #07004D;
+  border: 1px solid #07004D;
+
+}
+
+
+/* SECTION ONE NAVIGATION BAR STYLES ------------- */
+
+.nav-bar {
+  color: #edf7f6;
+  background-color: #07004D;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  height: 80px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+}
+
+.nav-bar .logo-section {
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: bolder;
+  font-size: xx-large;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.nav-bar .nav-list {
+  position: absolute;
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-left: 300px;
+  right: 20%;
+}
+
+.nav-list li {
+  font-family: 'Roboto';
+  margin: 0 15px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #edf7f6;
+}
+
+.btns {
+  position: absolute;
+  right: 5%;
+}
+
+.btns .nav-btns {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #edf7f6;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+/* SECTION TWO STYLES ----------------- */
+
+.section-two {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section-two .section-two-title {
+  text-align: center;
+  font-family: 'Raleway';
+  position: relative;
+  margin: 70px 0 10px 0;
+  font-size: 50px;
+}
+
+.section-two .section-two-title::before {
+  content: 'WOO';
+  position: absolute;
+  z-index: 0;
+  text-align: center;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #3B444B;
+  opacity: 0.1;
+  font-size: 100px;
+  
+}
+
+.section-two .section-two-subtitle {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Raleway';
+  font-weight: 600;
+}
+
+.products-boxes {
+  display: flex;
+  margin: 50px auto;
+}
+
+.products-boxes .box {
+  position: relative;
+  background-image: url('img/products.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 250px;
+  width: 330px;
+  margin: 0 5px;
+}
+
+.products-boxes .sub-box {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #edf7f6;
+  width: 90%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.product-title {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+
+.product-description {
+  color: #3B444B;
+  text-transform: capitalize;
+  line-height: 2em;
+}
+
+.view {
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #07004D;
+  transition: all 0.5s;
+}
+
+.view:hover {
+  background-color: #07004D;
+  color: #edf7f6;
+}
+
+/* SECTION TWO STYLES SECOND CATIGORY */
+
+.section-two-title.second-cat {
+  margin-top: 300px;
+}
+
+
+.raw-products {
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: auto;
+}
+
+.raws {
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: 10px;
+  background-image: url('img/products.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  margin-top: 40px;
+  padding: 10px;
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.sub-raw {
+  background-color: #edf7f6;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  position: absolute;
+  width: 400%;
+  height: 85%;
+  border-radius: 10px;
+  padding: 20px;
+  transform: translateX(23%);
+}
+
+.sub-raw .btn-container {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.sub-raw .btn-container .view {
+  width: 200px;
+}
