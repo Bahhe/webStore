@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;800&display=swap');
 
+/* GENERAL STYLES */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +12,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #edf7f6;
+  background: url('img/double-bubble-outline.png');
 }
 
 .main-container {
@@ -18,17 +21,47 @@ body {
   margin: 0 auto;
 }
 
+.btn-up {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  font-size: 2rem;
+  border: 1px solid #edf7f6;
+  border-radius: 50%;
+}
+
+.btn-up i {
+  color: #C47335;
+}
+
+.btn-up:hover {
+  transform: scale(1.1);
+  background-color: #07004D;
+  border: 1px solid #07004D;
+}
+
+.btn-up:hover i {
+  color: #edf7f6;
+}
+
+/* END OF GENERAL STYLES */
+
 /* SECTION ONE STYLES ------------- */
 
 .section-one {
   display: flex;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('img/section-one-background-2.jpg');
+  background-image: url('img/background-img.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 10px;
   width: 100%;
   height: 1000px;
   color: #edf7f6;
@@ -44,7 +77,7 @@ body {
 }
 
 .section-one .section-one-subtitle {
-  margin: 50px 0;
+  margin: 20px 0;
   max-width: 900px;
   text-align: center;
   font-size: 20px;
@@ -55,27 +88,31 @@ body {
 }
 
 .btn-container {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .btn {
-  cursor: pointer;
-  font-family: 'Raleway', 'sans-serif';
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: 800; 
-  color: #edf7f6;
+  width: 10rem;
+  transition: all 0.5s;
   text-shadow: 1px 3px 10px rgba(0,0,0,0.3), 
     -1px 1px 10px rgba(0,0,0,0.3);
-  background-color: transparent;
-  width: 150px;
-  height: 50px;
+  margin: 0 20px;
+  height: 4rem; 
+  font-weight: 800; 
+  font-size: 20px;
+  font-family: 'Raleway', 'sans-serif';
+  cursor: pointer;
   border: 1px solid #edf7f6;
-  transition: all 0.5s;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #edf7f6;
 }
 
 .buy-btn {
-  margin: 0 40px;
   background-color: #07004D;
   border: none;
 }
@@ -85,9 +122,6 @@ body {
   border: 1px solid #07004D;
 }
 
-.contact-us-btn {
-  margin: 0 40px;
-}
 
 .contact-us-btn:hover {
   background-color: #07004D;
@@ -114,11 +148,13 @@ body {
   border-radius: 5px;
 }
 
-.nav-bar .logo-section {
+.nav-bar .logo-section a {
   font-family: 'Raleway', 'sans-serif';
   font-weight: bolder;
-  font-size: xx-large;
+  font-size: 2.5rem;
   text-transform: uppercase;
+  color: #edf7f6;
+  text-decoration: none;
   margin-left: 30px;
 }
 
@@ -138,7 +174,14 @@ body {
 
 .nav-list li a {
   text-decoration: none;
+  padding-bottom: 4px;
   color: #edf7f6;
+  transition: all 1s;
+}
+
+.nav-list li a:hover {
+  border-bottom: 1px solid #C47335;
+  color: #C47335;
 }
 
 .btns {
@@ -162,6 +205,8 @@ body {
 .section-two {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
 }
@@ -169,6 +214,8 @@ body {
 .feature-products {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
 }
@@ -205,7 +252,14 @@ body {
 
 .products-boxes {
   display: flex;
+  justify-content: center;
   margin: 50px auto;
+  width: 100%;
+}
+
+.box, .sub-box {
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.1);
+
 }
 
 .box {
@@ -215,8 +269,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
-  height: 250px;
-  width: 330px;
+  height: 20em;
+  width: 30em;
   margin: 0 5px;
 }
 
@@ -227,7 +281,7 @@ body {
   right: 0;
   margin: 0 auto;
   padding: 30px;
-  background-color: #edf7f6;
+  background-color: #edf7f6e4;
   width: 90%;
   border-radius: 10px;
 }
@@ -286,8 +340,8 @@ body {
   margin: 20px;
   margin-top: 40px;
   padding: 10px;
-  width: 350px;
-  height: 250px;
+  width: 25em;
+  height: 15em;
   border-radius: 10px;
 }
 
@@ -295,7 +349,7 @@ body {
   background-color: #edf7f6;
   box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
   position: absolute;
-  width: 60vw;
+  width: 300%;
   height: 85%;
   border-radius: 10px;
   padding: 20px;
@@ -332,8 +386,8 @@ body {
   margin-top: 100px;
   margin-left: 10px;
   margin-right: 10px;
-  height: 200px;
-  width: 280px;
+  height: 15rem;
+  width: 25rem;
 }
 
 .best-selling-products .products-boxes .box .sub-box p {
@@ -425,6 +479,55 @@ body {
 }
 
 footer {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #07004D;
+  color: #edf7f6;
+  margin-top: 3rem;
 }
+
+.relative {
+  font-size: 0.9em;
+} 
+
+.upper-section {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.upper-section .title {
+  font-family: 'Raleway';
+  font-weight: 600;
+  padding: 1rem 0;
+
+}
+
+.footer-logo-section .logo {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media .title {
+  text-transform: capitalize;
+}
+
+.social-media i {
+  margin: 0 2px;
+  font-size: 2rem;
+}
+
+.lower-section {
+  text-align: center;
+  width: 80%;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-top: 1px solid #edf7f6;
+}
+
