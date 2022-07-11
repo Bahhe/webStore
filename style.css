@@ -3,11 +3,16 @@
 
 /* GENERAL STYLES */
 
+a {
+  text-decoration: none;
+  color: #000;
+
+}
+
 
 html {
   scroll-behavior: smooth;
 }
-
 
 * {
   box-sizing: border-box;
@@ -17,11 +22,10 @@ html {
 
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: #edf7f6;
   background: url('img/double-bubble-outline.png');
   height: 100vh;
-  width: 100vw;
   overflow: auto;
 }
 
@@ -29,6 +33,42 @@ body {
   position: relative;
   display: block;
   margin: 0 auto;
+}
+
+.shopping-cart {
+  background-color: #07004D;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: #edf7f6;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.shopping-cart:hover {
+  transform: translateY(-10px);
+}
+
+
+.shopping-cart::before {
+  content: '0';
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  top: -13px;
+  right: -13px;
+  height: 25px;
+  width: 25px;
+  background-color: #C47335;
+  color: #edf7f6;
+  border-radius: 50%;
 }
 
 .btn-up {
@@ -39,13 +79,13 @@ body {
   height: 3rem;
   background-color: transparent;
   font-size: 2rem;
-  border: 1px solid #edf7f6;
+  border: none;
   border-radius: 50%;
   transition: all 0.5s ;
 }
 
 .btn-up i {
-  color: #C47335;
+  color: #3B444B;
   transition: all 0.5s;
 }
 
@@ -73,7 +113,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   width: 100%;
   height: 1000px;
   color: #edf7f6;
@@ -188,11 +230,14 @@ body {
   text-decoration: none;
   padding-bottom: 4px;
   color: #edf7f6;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .nav-list li a:hover {
-  border-bottom: 1px solid #C47335;
+  color: #C47335;
+}
+
+.nav-list li a:active {
   color: #C47335;
 }
 
@@ -210,6 +255,15 @@ body {
   height: 30px;
   margin: 5px;
   font-size: 16px;
+  transition: all 0.5s;
+}
+
+.btns .nav-btns:hover {
+  color: #C47335;
+}
+
+.btns .nav-btns:active {
+  color: #C47335;
 }
 
 /* SECTION TWO STYLES ----------------- */
@@ -222,6 +276,56 @@ body {
   flex-direction: column;
   width: 100%;
 }
+
+.path {
+  font-family: 'Raleway';
+  font-size: 15px;
+  text-align: end;
+  width: 80%;
+  padding: 30px;
+  border-bottom: 1px solid rgb(227, 226, 226);
+}
+
+.path > * {
+  padding: 10px;
+}
+
+.path span + span + span {
+  opacity: 0.8;
+}
+
+.path span + span {
+  opacity: 0.8;
+}
+
+.items-info * {
+  display: inline-block;
+}
+
+.items-info {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.grid, .list {
+  cursor: pointer;
+  margin: 0 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+
+.grid:active, .list:active {
+  background-color: #07004D;
+  color: #fff;
+}
+
 
 .feature-products {
   position: relative;
@@ -239,6 +343,34 @@ body {
   margin: 70px 0 10px 0;
   font-size: 50px;
 }
+
+.number-of-boxes {
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  margin: 0 20px;
+  font-size: 15px;
+  color: #3B444B;
+}
+
+.number-of-boxes button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #3B444B;
+}
+
+.number-of-boxes button:active{
+  color: #8699a9;
+}
+
+.sorting #sort {
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid #bbc1c5;
+  font-size: 15px;
+  padding: 5px;
+}
+
 
 .section-two .section-two-title::before {
   content: 'WOO';
@@ -395,7 +527,7 @@ body {
 
 .best-selling-products .products-boxes .box {
   margin-bottom: 200px;
-  margin-top: 100px;
+  margin-top: 0;
   margin-left: 10px;
   margin-right: 10px;
   height: 15rem;
@@ -489,6 +621,22 @@ body {
   transform: translate(-10px, -20px);
 
 }
+
+.active-page button {
+  cursor: pointer;
+  background-color: transparent;
+  height: 3em;
+  width: 3em;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: 1px solid #07004D;
+}
+
+.active-page button:active, .active-page button:hover {
+  background-color: #07004D;
+  color: #edf7f6;
+}
+
 
 footer {
   display: flex;
