@@ -1,4 +1,4 @@
-const Scrollbar = window.Scrollbar;
+import Scrollbar from 'smooth-scrollbar';
 
 const options = {
   'dumping': 0.05,
