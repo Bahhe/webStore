@@ -6982,7 +6982,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var options = {
   'dumping': 0.05,
-  'renderByPixels': true
+  'renderByPixels': true,
+  'plugins': {
+    'effect': 'bounce'
+  }
 };
 
 _smoothScrollbar.default.init(document.querySelector('#my-scrollbar'), options);
@@ -7014,7 +7017,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38423" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3506" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
