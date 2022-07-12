@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>TIMGAD INFORMATIQUE | LOGIN</title>
+  <title>TIMGAD INFORMATIQUE | REGISTER</title>
 </head>
 <body>
   <div class="main-container">
@@ -24,6 +24,7 @@
        <li><a href="#copyright">Contact Us</a></li>
       </ul>
       <div class="btns">
+      <input type="text" class="search-bar" placeholder="search...">
         <button class="nav-btns search-btn">
           <i class="fas fa-magnifying-glass"></i>
         </button>
@@ -36,13 +37,13 @@
     <section class="product-view-section login-section">
     <form class="login-container" action="">
       <h2>welcome</h2>
-      <div class="form-section">
+      <div class="form-section register">
+        <input class="user-input" type="email" id="user-email" required>
         <label class="user-label" for="user-email">email</label>
-        <input class="user-input" type="email" id="user-email">
+        <input class="user-input" type="password" id="user-password" required>
         <label class="user-label" for="user-password">password</label>
-        <input class="user-input" type="password" id="user-password">
+        <input class="user-input" type="password" id="user-confirm-password" required>
         <label class="user-label" for="user-password">confirm password</label>
-        <input class="user-input" type="password" id="user-password">
       </div>
       <button class="register-btn">register</button>
     </form>
@@ -88,7 +89,6 @@
     <!-- <button class="shopping-cart"><i class="fas fa-cart-shopping"></i></button> -->
   </div>
   <script src="script.js"></script>
-  <script src="dist/smooth-scrollbar.js"></script>
   </div>
 </body>
 </html>

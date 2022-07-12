@@ -218,6 +218,7 @@ body {
   text-transform: uppercase;
   margin-left: 300px;
   right: 20%;
+  transition: all 0.5s;
 }
 
 .nav-list li {
@@ -810,7 +811,8 @@ footer {
   margin-top: 30px;
   width: 300px;
   z-index: 0;
-  transform: translateY(30px);
+  transform: translateY(-60px);
+  transition: all 0.5s;
 }
 .user-input {
   background-color: transparent;
@@ -818,8 +820,11 @@ footer {
   border-bottom: 1px solid #06004d4a;
   width: 300px;
   height: 40px;
+  font-size: 15px;
+  padding-left: 5px;
 }
-.user-input:focus {
+.user-input:focus, 
+.user-input:valid {
   outline: 0;
   border-bottom: 1px solid #07004D;
 }
@@ -853,4 +858,48 @@ footer {
   flex-direction: column;
 }
 
+.form-section input:focus + label { 
+  opacity: 0.7;
+  transform: translateY(-90px);
+}
+
+.form-section.register label {
+  transform: translateY(-60px);
+}
+
+.form-section.register input:focus + label {
+  opacity: 0.7;
+  transform: translateY(-90px);
+}
+
+.search-bar {
+  visibility: hidden;
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  width: 0px;
+  height: 30px;
+  border: none;
+  transition: all 0.5s;
+}
+.search-bar:focus,
+.search-bar:valid {
+  outline: 0;
+}
+
+
+.search-bar.search-active {
+  visibility: visible;
+  width: 400px;
+}
+.nav-list.search-active {
+  visibility: hidden;
+}
+
+
+.search-bar::placeholder {
+  font-family: inherit;
+  font-size: 15px;
+  padding-left: 10px;
+}
 

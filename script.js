@@ -1,12 +1,14 @@
-import Scrollbar from 'smooth-scrollbar';
+// SEARCH BAR CODE 
 
-const options = {
-  'dumping': 0.05,
-  'renderByPixels': true,
-  'plugins': {
-    'effect': 'bounce'
-  }
+const navList = document.querySelector('.nav-list')
+const searchBar = document.querySelector('.search-bar') 
+const searchBtn = document.querySelector('.search-btn')
+
+console.log(navList,searchBar,searchBtn)
+
+searchBtn.addEventListener('click', showSearchBar)
+
+function showSearchBar() {
+  searchBar.classList.toggle('search-active')
+  navList.classList.toggle('search-active')
 }
-
-Scrollbar.init(document.querySelector('#my-scrollbar'), options);
-
